@@ -1,6 +1,8 @@
 # DSND-DisasterResponse
 This project is part of Udacity's Data Science Nanodegree assignment. It analyses disaster text message data from Figure Eight to build a classifier powered API to tag messages against their categories. 
 
+## Description
+
 ## Dependencies
 - Machine Learning Libraries: NumPy, SciPy, Pandas, Sciki-Learn
 - Natural Language Process Libraries: NLTK, genism
@@ -23,3 +25,5 @@ This project is part of Udacity's Data Science Nanodegree assignment. It analyse
     `python run.py`
 
 4. Go to http://0.0.0.0:3001/
+
+## Credits
