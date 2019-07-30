@@ -112,7 +112,6 @@ class tfidfExtractor(BaseEstimator, TransformerMixin):
         self.col_name = col_name
         self.countvect = CountVectorizer(tokenizer = tokenize_fct)
         X_cvect = self.countvect.fit_transform(X[col_name].values.ravel())
-        print('cv shape', X_cvect.shape)
         self.tfidftrans = TfidfTransformer(smooth_idf=False)
         self.tfidftrans.fit(X_cvect)
         
@@ -123,7 +122,6 @@ class tfidfExtractor(BaseEstimator, TransformerMixin):
         # apply tfidf
         X_cvect = self.countvect.transform(X[self.col_name].values.ravel())
         X_tfidf = self.tfidftrans.transform(X_cvect)
-        print('tfidf shape', X_tfidf.shape)
         return X_tfidf
     
     
