@@ -5,7 +5,7 @@ This project is part of Udacity's Data Science Nanodegree assignment. It analyse
 
 The project is divided into three main components
 1. ETL - Extracts, cleans and loads data into an SQL database
-2. Model training - A machine learning pipeline that uses NLTK, scikit-learn's Pipeline and GridSearchCV to conduct multioutput classification using random forest. It outputs the final model into a pickle file
+2. Model training - A machine learning pipeline that uses NLTK, scikit-learn's Pipeline and GridSearchCV to conduct multioutput classification using random forest. It outputs the final model into a pickle file (Please note that the pickle file cannot be uploaded as the size exceeds the maximum allowed on github. The model will need to be retrained should users wish to run it on a local machine.)
 3. Web app - After users enter new messages, the Flask web app will tag the messages with different categories using the trained model. It also displays simple visualisation of the dataset.
 
 ## Dependencies
