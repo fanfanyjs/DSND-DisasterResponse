@@ -9,7 +9,7 @@ The project is divided into three main components
 3. Web app - After users enter new messages, the Flask web app will tag the messages with different categories using the trained model. It also displays simple visualisation of the dataset.
 
 ## Dependencies
-Python 3.5 is used to create this project
+Python 3.5 is used to create this project and the following libraries are used:
 - Machine Learning Libraries: NumPy, Pandas, Sciki-Learn
 - Natural Language Processing: NLTK, genism
 - SQLite Database: SQLalchemy
