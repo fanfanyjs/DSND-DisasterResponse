@@ -1,11 +1,17 @@
 # DSND-DisasterResponse
-This project is part of Udacity's Data Science Nanodegree assignment. It analyses disaster text message data from Figure Eight to build a classifier powered API to tag messages against their categories. 
 
 ## Description
+This project is part of Udacity's Data Science Nanodegree assignment. It analyses disaster text message data from Figure Eight to build a classifier powered API to tag messages against their categories. 
+
+The project is divided into three main components
+1. ETL - Extracts, cleans and loads data into an SQL database
+2. Model training - A machine learning pipeline that uses NLTK, scikit-learn's Pipeline and GridSearchCV to conduct multioutput classification using random forest. It outputs the final model into a pickle file
+3. Web app - After users enter new messages, the Flask web app will tag the messages with different categories using the trained model. It also displays simple visualisation of the dataset.
 
 ## Dependencies
-- Machine Learning Libraries: NumPy, SciPy, Pandas, Sciki-Learn
-- Natural Language Process Libraries: NLTK, genism
+Python 3.5 is used to create this project
+- Machine Learning Libraries: NumPy, Pandas, Sciki-Learn
+- Natural Language Processing: NLTK, genism
 - SQLite Database: SQLalchemy
 - Web App: Flask
 - Data Visualisation: Plotly
@@ -27,3 +33,6 @@ This project is part of Udacity's Data Science Nanodegree assignment. It analyse
 4. Go to http://0.0.0.0:3001/
 
 ## Credits
+Licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License - Please refer to Udacity Terms of Service for further information.
+
+Udacity and FigureEight - for providing the dataset and designing the project
